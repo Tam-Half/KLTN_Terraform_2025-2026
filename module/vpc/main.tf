@@ -10,7 +10,7 @@ resource "aws_subnet" "public_1a" {
   cidr_block        = "10.0.8.0/24"
   availability_zone = var.subnet_azs[0]
   tags = {
-    Name = "public-subnet-us-east-1a"
+    Name = "public-subnet-ap-southeast-1a"
   }
 }
 resource "aws_subnet" "private_1a" {
@@ -18,7 +18,7 @@ resource "aws_subnet" "private_1a" {
   cidr_block        = "10.0.7.0/24"
   availability_zone = var.subnet_azs[0]
   tags = {
-    Name = "private-subnet-us-east-1a"
+    Name = "private-subnet-ap-southeast-1a"
   }
 }
 
@@ -35,7 +35,7 @@ resource "aws_route_table" "private" {
   vpc_id = aws_vpc.main.id
 
   tags = {
-    Name = "project-rtb-private1-us-east-1a"
+    Name = "project-rtb-private1-ap-southeast-1a"
   }
 }
 

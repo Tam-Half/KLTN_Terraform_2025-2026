@@ -7,7 +7,7 @@ variable "allowed_ssh_ips" {
     type = list(string)
     #["MY IP/32"]
     # curl ifconfig.me
-    default = [".............../32"]
+    default = ["127.0.0.1/32"]
 }
 
 variable "aws_instance_type" {
