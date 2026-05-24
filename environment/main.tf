@@ -14,7 +14,7 @@ module "vpc" {
 ## EC2
 module "ec2" {
     source             = "../module/ec2"
-    aws_instance_type  = "t3.micro"
+    aws_instance_type  = "t2.small"
     aws_ami            = "ami-091138d0f0d41ff90"
     vpc_id             =  module.vpc.vpc_id
     public_subnet      =  module.vpc.public_subnet_ids
