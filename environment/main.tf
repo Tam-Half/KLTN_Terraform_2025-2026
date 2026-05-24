@@ -8,7 +8,7 @@ module "keypair" {
 module "vpc" {
     source = "../module/vpc"
     aws_name_vpc       = "kltn_vpc"
-    subnet_azs         = ["us-east-1a"]
+    subnet_azs         = ["ap-southeast-1a"]
 }
 
 ## EC2
